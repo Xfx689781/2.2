@@ -1,0 +1,85 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&display=swap" rel="stylesheet">
+   <style>
+
+  h1 {
+      font-family: 'ojuju', cursive;
+      color: #ffffff;
+      font-size: 45px;
+  } 
+  </style>
+</head>  
+<h1>2.2 - Return Statements</h1>
+
+<body>
+   <style>
+      /* To-do: Insert CSS here */
+  body {
+      background-image: url('Images/math.webp');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+      font-family: 'ojuju', cursive;
+      color: #ffffff;
+      font-size: 20px;
+  } 
+  h2{
+    font-family: 'ojuju', cursive;
+      color: #ffffff;
+      font-size: 30px;
+  }
+  h3{
+    color: rgb(255, 255, 255);
+  }
+  </style>
+  <h2>
+    Page 03 - The Cylinder
+    </h2>
+
+<br>
+<script>
+    function area_circle(r) {
+        area = Math.PI*r*r;
+        return area;
+    }
+
+    
+    function area_label(r,h){
+        area = 2*Math.PI*r*h;
+        return area;
+    }
+    
+    function area_cylinder(r,h){
+        area = area_circle(r)*2+area_label(r,h);
+        return area;
+    }
+    
+    function provide() {
+        var r = document.getElementById('r').value;
+        var h = document.getElementById('h').value;
+        alert("Area of circle: "+area_circle(r).toFixed(2)+"\n Area of the label: "+area_label(r,h).toFixed(2)+"\n Area of the cylinder: "+area_cylinder(r,h).toFixed(2)); 
+    }
+</script>
+
+<form action="#" method="post" id="delInfo">
+ Input the radius:<br>
+  <input type="number" name="r" id="r"><br><br>
+  
+  Input the height:<br>
+  <input type="number" name="h" id="h"><br><br>
+  
+
+  <input type="submit" onClick="provide()" id="submit" value="submit">
+
+  
+</form>
+<form action="2.2(Page4).html">
+  <input type="submit" value="next" id="next">
+</form>
+
+
+</body>
+</html>

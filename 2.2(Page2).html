@@ -1,0 +1,72 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&display=swap" rel="stylesheet">
+   <style>
+
+  h1 {
+      font-family: 'ojuju', cursive;
+      color: #ffffff;
+      font-size: 45px;
+  } 
+  </style>
+</head>  
+<h1>2.2 - Return Statements</h1>
+
+<body>
+   <style>
+      /* To-do: Insert CSS here */
+  body {
+      background-image: url('Images/image.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+      font-family: 'ojuju', cursive;
+      color: #ffffff;
+      font-size: 20px;
+  } 
+  h2{
+    font-family: 'ojuju', cursive;
+      color: #ffffff;
+      font-size: 30px;
+  }
+  h3{
+    color: rgb(255, 255, 255);
+  }
+  </style>
+  <h2>
+    Page 02 - Even Number Divided By Nine
+    </h2>
+
+<br>
+<script>
+    function evennine(value) {
+        if (value % 2 == 0 && value % 9 == 0) {
+            return true;
+        } else {
+            return false;
+        } 
+    }
+
+    function provide() {
+        var value = document.getElementById('value').value;
+        alert(evennine(value)); 
+    }
+</script>
+
+<form action="#" method="post" id="delInfo">
+ Input an integer:<br>
+  <input type="number" name="value" id="value"><br><br>
+  
+  <input type="submit" onClick="provide()" id="submit" value="submit">
+
+  
+</form>
+<form action="2.2(Page3).html">
+  <input type="submit" value="next" id="next">
+</form>
+
+
+</body>
+</html>

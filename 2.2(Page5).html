@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+        overflow: hidden;
+        cursor: crosshair; 
+        background-image: url(Images/All-saints-2-feat-cr-1024x800.jpg);
+    }
+    
+    form {
+        position: absolute;
+        top: 900px;
+        left: 20px;
+    }
+    #hint {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 30px;
+        color:rgb(4, 88, 88);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+</style>
+</head>
+<body>
+<div id="hint">Welcome to page 05, my BONUS TASK!!! Please try to click the mouse!!!</div>
+<script>
+    // Function to generate a figure and write "ASH-All Saints C.H.S."
+    function generateFigure(event) {
+        const x = event.clientX;
+        const y = event.clientY;
+
+        const image = document.createElement("img");
+        image.src = "Images/OIP.jpg"; // Set the src attribute to the image file
+        image.style.position = "absolute";
+        image.width="80";
+        image.height="95";
+        image.style.left = x + "px";
+        image.style.top = y + "px";
+        document.body.appendChild(image);
+
+        const text = document.createElement("div");
+        text.textContent = "Hi All Saints!!!";
+        text.style.position = "absolute";
+        text.style.fontFamily = "Courier New, Courier, monospace"; 
+        text.style.color = "green"; 
+        text.style.left = (x + 60) + "px";
+        text.style.top = (y - 20) + "px";
+        document.body.appendChild(text);
+    }
+
+    // Event listener for mouse click
+    document.addEventListener("click", generateFigure);
+</script>
+
+<form action="2.2(Page1).html">
+    <input type="submit" value="BACK TO PAGE 1">
+  </form>
+  
+</body>
+</html>

@@ -1,0 +1,106 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&display=swap" rel="stylesheet">
+   <style>
+
+  h1 {
+      font-family: 'ojuju', cursive;
+      color: #ffffff;
+      font-size: 45px;
+  } 
+  </style>
+</head>  
+<h1>2.2 - Return Statements</h1>
+
+<body>
+   <style>
+      /* To-do: Insert CSS here */
+  body {
+      background-image: url('Images/ghost.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+      font-family: 'ojuju', cursive;
+      color: #ffffff;
+      font-size: 20px;
+  } 
+  h2{
+    font-family: 'ojuju', cursive;
+      color: #ffffff;
+      font-size: 30px;
+  }
+  h3{
+    color: rgb(255, 255, 255);
+  }
+  </style>
+  <h2>
+    Page 04 - Creepy Ghosts
+    </h2>
+
+<script>
+function ghost_watch(polter, wolter) {
+    // Check if both ghosts are either laughing or angry
+    if ((polter == 2 && wolter == 2) || (polter == 0 && wolter == 0)) {
+        return true;
+      
+    } else {
+        return false;
+      
+    }
+}
+function convertPolter(mood){
+    if (mood==0){
+        alert("Polter's mood: Laughing");
+    }
+    if (mood==1){
+        alert("Polter's mood: Neutral");
+    }
+    if (mood==2){
+        alert("Polter's mood: Angry");
+    }
+
+
+}
+
+function convertWolter(mood){
+    if (mood==0){
+        alert("Wolter's mood: Laughing");
+    }
+    if (mood==1){
+        alert("Wolter's mood: Neutral");
+    }
+    if (mood==2){
+        alert("Wolter's mood: Angry");
+    }
+
+
+}
+
+function provide(){
+// Generate random moods for Polter and Wolter
+const polter_mood = Math.floor(Math.random() * 3);;
+const wolter_mood = Math.floor(Math.random() * 3);;
+
+// Output moods
+convertPolter(polter_mood);
+convertWolter(wolter_mood);
+// Check if lockdown is needed
+alert("Need to lockdown: "+ghost_watch(polter_mood, wolter_mood));
+}
+</script>
+
+<form action="#" method="post" id="delInfo">
+ When we submit, it shows us the moods <br>of the two phosts (generated randomly)<br> and whether we need to lockdown or no.
+  <br><br><input type="submit" onClick="provide()" id="submit" value="submit">
+
+  
+</form>
+<form action="2.2(Page4).html">
+  <input type="submit" value="next" id="next">
+</form>
+
+
+</body>
+</html>

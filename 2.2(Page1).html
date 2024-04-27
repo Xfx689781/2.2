@@ -1,0 +1,76 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&display=swap" rel="stylesheet">
+   <style>
+
+  h1 {
+      font-family: 'ojuju', cursive;
+      color: #0a2350;
+      font-size: 45px;
+  } 
+  </style>
+</head>  
+<h1>2.2 - Return Statements</h1>
+
+<body>
+   <style>
+      /* To-do: Insert CSS here */
+  body {
+      background-image: url('Images/photo.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: 100% 100%;
+      font-family: 'ojuju', cursive;
+      color: #243302;
+      font-size: 20px;
+  } 
+  h2{
+    font-family: 'ojuju', cursive;
+      color: #1f2a05;
+      font-size: 30px;
+  }
+  h3{
+    color: rgb(0, 0, 0);
+  }
+  </style>
+  <h2>
+    Page 01 - Is It The Weekend?
+    </h2>
+
+  <h3><br><br><br>
+   Sunday = 1,  Mondy = 2,  Tuesday = 3,  Wednesday = 4,  Thursday = 5,  Friday = 6,  Saturday = 7!!!<br><br>
+</h3>
+<script>
+    function is_it_the_weekend(tday) {
+        if (tday == 1 || tday == 7) {
+            return true;
+        } else if (tday >= 2 && tday <= 6) {
+            return false;
+        } else {
+            alert("Please input a valid number from 1 to 7.");
+        }
+    }
+
+    function provide() {
+        var tday = document.getElementById('day').value;
+        alert(is_it_the_weekend(tday)); 
+    }
+</script>
+
+<form action="#" method="post" id="delInfo">
+ What day is today? (input a number from 1 to 7 using the rule above):<br>
+  <input type="number" name="day" id="day"><br><br>
+  
+  <input type="submit" onClick="provide()" id="submit" value="submit">
+
+  
+</form>
+<form action="2.2(Page2).html">
+  <input type="submit" value="next" id="next">
+</form>
+
+
+</body>
+</html>
